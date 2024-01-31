@@ -8,149 +8,107 @@
 import Foundation
 
 class NetworkCall : NSObject, ObservableObject, URLSessionDelegate {
-    @Published var posts = [Posts]()
+    @Published var reply = [Reply]()
     
-    func loadPostData(completion:@escaping ([Posts]) -> ()) {
-        guard let url = URL(string: "http://192.168.0.101:80/json") else {
-            print("Invalid url...")
-            return
-        }
-        URLSession.shared.dataTask(with: url) { data, response, error in
-            print(data as Any)
-        }.resume()
-    }
-    
-    func sendDataToServer() {
+    func sendDataToServer(IP_Add: String,reqType: String, completion: @escaping (Result<String, Error>) -> Void) {
         // Replace with your server URL
-        let serverURL = URL(string: "http://192.168.0.101:80")!
+        var url_send = "http://"+IP_Add+":80/Apprequests"
+        let serverURL = URL(string: url_send)!
 
         // Replace with your data and make sure it's in the correct format (e.g., JSON)
-        let jsonData = """
-        {
-            "key1": "value1",
-            "key2": "value2"
-        }
-        """.data(using: .utf8)
 
         var request = URLRequest(url: serverURL)
         request.httpMethod = "POST"
-        request.httpBody = jsonData
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")
+        request.addValue(reqType, forHTTPHeaderField: "req_type")
 
         let session = URLSession.shared
 
-        let task = session.uploadTask(with: request, from: jsonData) { data, response, error in
+        let task = session.dataTask(with: request) { data, response, error in
             if let error = error {
-                print("Error: \(error)")
+                completion(.failure(error))
                 return
             }
 
-            // Handle the response data here
             if let data = data {
-                let responseString = String(data: data, encoding: .utf8)
-                print("Response: \(responseString ?? "No response data")")
+                if let responseString = String(data: data, encoding: .utf8) {
+                    completion(.success(responseString))
+                } else {
+                    completion(.failure(NSError(domain: "InvalidResponse", code: 0, userInfo: nil)))
+                }
+            } else {
+                completion(.failure(NSError(domain: "NoData", code: 0, userInfo: nil)))
             }
         }
-
         task.resume()
     }
-    func senddataDataToServer() {
+    func sendDataToServer(IP_Add: String,reqType: String,Switch_Number:String, completion: @escaping (Result<String, Error>) -> Void) {
         // Replace with your server URL
-        let serverURL = URL(string: "http://192.168.0.101:80/11")!
+        var url_send = "http://"+IP_Add+":80/Apprequests"
+        let serverURL = URL(string: url_send)!
 
         // Replace with your data and make sure it's in the correct format (e.g., JSON)
-//        let jsonData = """
-//        {h$}
-//        """.data(using: .utf8)
 
-        let request = URLRequest(url: serverURL)
-//        request.httpMethod = "POST"
-//        request.httpBody = jsonData
-//        request.addValue("application/text", forHTTPHeaderField: "Content-Type")
+        var request = URLRequest(url: serverURL)
+        request.httpMethod = "POST"
+        request.addValue("application/json", forHTTPHeaderField: "Content-Type")
+        request.addValue(reqType, forHTTPHeaderField: "req_type")
+        request.addValue(Switch_Number, forHTTPHeaderField: "Switch_Number")
 
         let session = URLSession.shared
-        
-        let task = session.dataTask(with: request){ data, response, error in
+
+        let task = session.dataTask(with: request) { data, response, error in
             if let error = error {
-                print("Error: \(error)")
+                completion(.failure(error))
                 return
             }
-            
-            // Handle the response data here
+
             if let data = data {
-                let responseString = String(data: data, encoding: .utf8)
-                print("Response: \(responseString ?? "No response data")")
+                if let responseString = String(data: data, encoding: .utf8) {
+                    completion(.success(responseString))
+                } else {
+                    completion(.failure(NSError(domain: "InvalidResponse", code: 0, userInfo: nil)))
+                }
+            } else {
+                completion(.failure(NSError(domain: "NoData", code: 0, userInfo: nil)))
             }
         }
-//        let task = session.uploadTask(with: request, from: jsonData) { data, response, error in
-//            if let error = error {
-//                print("Error: \(error)")
-//                return
-//            }
-//
-//            // Handle the response data here
-//            if let data = data {
-//                let responseString = String(data: data, encoding: .utf8)
-//                print("Response: \(responseString ?? "No response data")")
-//            }
-//        }
-
         task.resume()
     }
-//    func Websocket_Task(){
-//        let serverURL = URL(string: "192.168.0.101:80")!
-//        let urlSession = URLSession(configuration: .default)
-//        let webSocketTask = urlSession.webSocketTask(with: serverURL)
-//        webSocketTask.resume()
-//        webSocketTask.cancel(with: .goingAway, reason: nil)
-//    }
+    
+    func sendDataToServer(IP_Add: String,reqType: String,Identification:String,Wifi_SSID:String,Wifi_Password:String,completion: @escaping (Result<String, Error>) -> Void) {
+        // Replace with your server URL
+        var url_send = "http://"+IP_Add+":80/Apprequests"
+        let serverURL = URL(string: url_send)!
 
+        // Replace with your data and make sure it's in the correct format (e.g., JSON)
+
+        var request = URLRequest(url: serverURL)
+        request.httpMethod = "POST"
+        request.addValue("application/json", forHTTPHeaderField: "Content-Type")
+        request.addValue(reqType, forHTTPHeaderField: "req_type")
+        request.addValue(Identification, forHTTPHeaderField: "Identification")
+        request.addValue(Wifi_SSID, forHTTPHeaderField: "Wifi_SSID")
+        request.addValue(Wifi_Password, forHTTPHeaderField: "Wifi_Password")
+
+        let session = URLSession.shared
+
+        let task = session.dataTask(with: request) { data, response, error in
+            if let error = error {
+                completion(.failure(error))
+                return
+            }
+
+            if let data = data {
+                if let responseString = String(data: data, encoding: .utf8) {
+                    completion(.success(responseString))
+                } else {
+                    completion(.failure(NSError(domain: "InvalidResponse", code: 0, userInfo: nil)))
+                }
+            } else {
+                completion(.failure(NSError(domain: "NoData", code: 0, userInfo: nil)))
+            }
+        }
+        task.resume()
+    }
 }
-
-//import Foundation
-//
-//class NetworkManager : NSObject, URLSessionStreamDelegate{
-//    static var shared = NetworkManager()
-//    
-//    private var session: URLSession! = nil
-//    
-//    private var stream: URLSessionStreamTask! = nil
-//    
-//    override init() {
-//        super.init()
-//        let config = URLSessionConfiguration.default
-//        config.requestCachePolicy = .reloadIgnoringLocalCacheData
-//        self.session = URLSession(configuration: config, delegate: self, delegateQueue: .main)
-//        self.stream = self.session.streamTask(withHostName: "http://192.168.0.101", port: 80)
-//    }
-//    
-//    func loadData(){
-//        self.stream.startSecureConnection()
-////        self.stream.write("1".data(using: .unicode)!, timeout:60, completionHandler: {
-////            (error) in print("ERROR")
-////        })
-////        self.stream.readData(ofMinLength: 0, maxLength: 100000, timeout: 60, completionHandler: { (data, bool, error) in
-////            print("bool = \(bool)")
-////            print("data = \(data)")
-////            print("error = \(String(describing: error))")
-////        })
-//        self.stream.resume()
-//    }
-//}
-//
-//    
-//    
-//    
-////    func loadPostData(completion:@escaping ([Posts]) -> ()) {
-////        
-////        URLSess
-////        
-////        URLSession.shared.dataTask(with: url) { data, response, error in
-////            let posts = try! JSONDecoder().decode([Posts].self, from: data!)
-////            DispatchQueue.main.async {
-////                completion(posts)
-////            }
-////        }.resume()
-////        
-////    }
-////}

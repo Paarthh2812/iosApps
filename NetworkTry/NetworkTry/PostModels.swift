@@ -7,9 +7,8 @@
 
 import Foundation
 
-struct Posts: Codable, Identifiable {
+struct Reply: Codable, Identifiable {
     var id: Int
-    var userId: Int
-    var title: String
-    var body: String
+    var sent: String
+    var message: String
 }
