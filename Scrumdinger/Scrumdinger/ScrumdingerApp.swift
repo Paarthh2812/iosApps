@@ -17,6 +17,7 @@ struct ScrumdingerApp: App {
             ScrumsView(scrums: $store.scrums) {
                 Task {
                     do {
+                        print("saving")
                         try await store.save(scrums: store.scrums)
                     } catch {
                         errorWrapper = ErrorWrapper(error: error,

@@ -1,0 +1,661 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		401515F92B6A9864006964D1 /* RefreshView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401515F82B6A9864006964D1 /* RefreshView.swift */; };
+		407926D52B6BB3BF00384177 /* AlternateViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407926D42B6BB3BF00384177 /* AlternateViews.swift */; };
+		407926D72B6BB69000384177 /* RenameBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407926D62B6BB69000384177 /* RenameBoardView.swift */; };
+		407926DC2B6BD1F700384177 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407926DB2B6BD1F700384177 /* Theme.swift */; };
+		407926DE2B6BD23300384177 /* ThemeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407926DD2B6BD23300384177 /* ThemeView.swift */; };
+		407926E02B6BD24700384177 /* ThemePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407926DF2B6BD24700384177 /* ThemePicker.swift */; };
+		4085FA622B6A84AC0068294B /* iSwitchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4085FA612B6A84AC0068294B /* iSwitchApp.swift */; };
+		4085FA642B6A84AC0068294B /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4085FA632B6A84AC0068294B /* MainView.swift */; };
+		4085FA662B6A84AD0068294B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4085FA652B6A84AD0068294B /* Assets.xcassets */; };
+		4085FA692B6A84AD0068294B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4085FA682B6A84AD0068294B /* Preview Assets.xcassets */; };
+		4085FA732B6A84AE0068294B /* iSwitchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4085FA722B6A84AE0068294B /* iSwitchTests.swift */; };
+		4085FA7D2B6A84AE0068294B /* iSwitchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4085FA7C2B6A84AE0068294B /* iSwitchUITests.swift */; };
+		4085FA7F2B6A84AE0068294B /* iSwitchUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4085FA7E2B6A84AE0068294B /* iSwitchUITestsLaunchTests.swift */; };
+		4085FA8C2B6A88570068294B /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4085FA8B2B6A88570068294B /* Network.swift */; };
+		4085FA8F2B6A89D30068294B /* SwitchStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4085FA8E2B6A89D30068294B /* SwitchStore.swift */; };
+		4085FA912B6A89EE0068294B /* BoardData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4085FA902B6A89EE0068294B /* BoardData.swift */; };
+		4085FA932B6A8CA30068294B /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4085FA922B6A8CA30068294B /* ErrorView.swift */; };
+		4085FA952B6A8CC50068294B /* ErrorWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4085FA942B6A8CC50068294B /* ErrorWrapper.swift */; };
+		4085FA972B6A8F920068294B /* BoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4085FA962B6A8F920068294B /* BoardView.swift */; };
+		4085FA992B6A8FA20068294B /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4085FA982B6A8FA20068294B /* CardView.swift */; };
+		4085FA9D2B6A91D00068294B /* NewBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4085FA9C2B6A91D00068294B /* NewBoardView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4085FA6F2B6A84AE0068294B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4085FA562B6A84AC0068294B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4085FA5D2B6A84AC0068294B;
+			remoteInfo = iSwitch;
+		};
+		4085FA792B6A84AE0068294B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4085FA562B6A84AC0068294B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4085FA5D2B6A84AC0068294B;
+			remoteInfo = iSwitch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		401515F82B6A9864006964D1 /* RefreshView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshView.swift; sourceTree = "<group>"; };
+		407926D42B6BB3BF00384177 /* AlternateViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlternateViews.swift; sourceTree = "<group>"; };
+		407926D62B6BB69000384177 /* RenameBoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenameBoardView.swift; sourceTree = "<group>"; };
+		407926DB2B6BD1F700384177 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		407926DD2B6BD23300384177 /* ThemeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeView.swift; sourceTree = "<group>"; };
+		407926DF2B6BD24700384177 /* ThemePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemePicker.swift; sourceTree = "<group>"; };
+		4085FA5E2B6A84AC0068294B /* iSwitch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iSwitch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4085FA612B6A84AC0068294B /* iSwitchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iSwitchApp.swift; sourceTree = "<group>"; };
+		4085FA632B6A84AC0068294B /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		4085FA652B6A84AD0068294B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4085FA682B6A84AD0068294B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4085FA6E2B6A84AE0068294B /* iSwitchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iSwitchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4085FA722B6A84AE0068294B /* iSwitchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iSwitchTests.swift; sourceTree = "<group>"; };
+		4085FA782B6A84AE0068294B /* iSwitchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iSwitchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4085FA7C2B6A84AE0068294B /* iSwitchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iSwitchUITests.swift; sourceTree = "<group>"; };
+		4085FA7E2B6A84AE0068294B /* iSwitchUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iSwitchUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4085FA8B2B6A88570068294B /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		4085FA8E2B6A89D30068294B /* SwitchStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchStore.swift; sourceTree = "<group>"; };
+		4085FA902B6A89EE0068294B /* BoardData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardData.swift; sourceTree = "<group>"; };
+		4085FA922B6A8CA30068294B /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
+		4085FA942B6A8CC50068294B /* ErrorWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorWrapper.swift; sourceTree = "<group>"; };
+		4085FA962B6A8F920068294B /* BoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardView.swift; sourceTree = "<group>"; };
+		4085FA982B6A8FA20068294B /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		4085FA9C2B6A91D00068294B /* NewBoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewBoardView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4085FA5B2B6A84AC0068294B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4085FA6B2B6A84AE0068294B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4085FA752B6A84AE0068294B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		401515FA2B6A9C64006964D1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4085FA962B6A8F920068294B /* BoardView.swift */,
+				4085FA922B6A8CA30068294B /* ErrorView.swift */,
+				401515F82B6A9864006964D1 /* RefreshView.swift */,
+				4085FA982B6A8FA20068294B /* CardView.swift */,
+				4085FA9C2B6A91D00068294B /* NewBoardView.swift */,
+				407926D42B6BB3BF00384177 /* AlternateViews.swift */,
+				407926DD2B6BD23300384177 /* ThemeView.swift */,
+				407926DF2B6BD24700384177 /* ThemePicker.swift */,
+				407926D62B6BB69000384177 /* RenameBoardView.swift */,
+				4085FA632B6A84AC0068294B /* MainView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4085FA552B6A84AC0068294B = {
+			isa = PBXGroup;
+			children = (
+				4085FA602B6A84AC0068294B /* iSwitch */,
+				4085FA712B6A84AE0068294B /* iSwitchTests */,
+				4085FA7B2B6A84AE0068294B /* iSwitchUITests */,
+				4085FA5F2B6A84AC0068294B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4085FA5F2B6A84AC0068294B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4085FA5E2B6A84AC0068294B /* iSwitch.app */,
+				4085FA6E2B6A84AE0068294B /* iSwitchTests.xctest */,
+				4085FA782B6A84AE0068294B /* iSwitchUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4085FA602B6A84AC0068294B /* iSwitch */ = {
+			isa = PBXGroup;
+			children = (
+				4085FA612B6A84AC0068294B /* iSwitchApp.swift */,
+				401515FA2B6A9C64006964D1 /* Views */,
+				4085FA8D2B6A898E0068294B /* Models */,
+				4085FA652B6A84AD0068294B /* Assets.xcassets */,
+				4085FA672B6A84AD0068294B /* Preview Content */,
+			);
+			path = iSwitch;
+			sourceTree = "<group>";
+		};
+		4085FA672B6A84AD0068294B /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				4085FA682B6A84AD0068294B /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4085FA712B6A84AE0068294B /* iSwitchTests */ = {
+			isa = PBXGroup;
+			children = (
+				4085FA722B6A84AE0068294B /* iSwitchTests.swift */,
+			);
+			path = iSwitchTests;
+			sourceTree = "<group>";
+		};
+		4085FA7B2B6A84AE0068294B /* iSwitchUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4085FA7C2B6A84AE0068294B /* iSwitchUITests.swift */,
+				4085FA7E2B6A84AE0068294B /* iSwitchUITestsLaunchTests.swift */,
+			);
+			path = iSwitchUITests;
+			sourceTree = "<group>";
+		};
+		4085FA8D2B6A898E0068294B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4085FA8B2B6A88570068294B /* Network.swift */,
+				4085FA8E2B6A89D30068294B /* SwitchStore.swift */,
+				407926DB2B6BD1F700384177 /* Theme.swift */,
+				4085FA942B6A8CC50068294B /* ErrorWrapper.swift */,
+				4085FA902B6A89EE0068294B /* BoardData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4085FA5D2B6A84AC0068294B /* iSwitch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4085FA822B6A84AE0068294B /* Build configuration list for PBXNativeTarget "iSwitch" */;
+			buildPhases = (
+				4085FA5A2B6A84AC0068294B /* Sources */,
+				4085FA5B2B6A84AC0068294B /* Frameworks */,
+				4085FA5C2B6A84AC0068294B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iSwitch;
+			productName = iSwitch;
+			productReference = 4085FA5E2B6A84AC0068294B /* iSwitch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4085FA6D2B6A84AE0068294B /* iSwitchTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4085FA852B6A84AE0068294B /* Build configuration list for PBXNativeTarget "iSwitchTests" */;
+			buildPhases = (
+				4085FA6A2B6A84AE0068294B /* Sources */,
+				4085FA6B2B6A84AE0068294B /* Frameworks */,
+				4085FA6C2B6A84AE0068294B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4085FA702B6A84AE0068294B /* PBXTargetDependency */,
+			);
+			name = iSwitchTests;
+			productName = iSwitchTests;
+			productReference = 4085FA6E2B6A84AE0068294B /* iSwitchTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4085FA772B6A84AE0068294B /* iSwitchUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4085FA882B6A84AE0068294B /* Build configuration list for PBXNativeTarget "iSwitchUITests" */;
+			buildPhases = (
+				4085FA742B6A84AE0068294B /* Sources */,
+				4085FA752B6A84AE0068294B /* Frameworks */,
+				4085FA762B6A84AE0068294B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4085FA7A2B6A84AE0068294B /* PBXTargetDependency */,
+			);
+			name = iSwitchUITests;
+			productName = iSwitchUITests;
+			productReference = 4085FA782B6A84AE0068294B /* iSwitchUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4085FA562B6A84AC0068294B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					4085FA5D2B6A84AC0068294B = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					4085FA6D2B6A84AE0068294B = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 4085FA5D2B6A84AC0068294B;
+					};
+					4085FA772B6A84AE0068294B = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 4085FA5D2B6A84AC0068294B;
+					};
+				};
+			};
+			buildConfigurationList = 4085FA592B6A84AC0068294B /* Build configuration list for PBXProject "iSwitch" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4085FA552B6A84AC0068294B;
+			productRefGroup = 4085FA5F2B6A84AC0068294B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4085FA5D2B6A84AC0068294B /* iSwitch */,
+				4085FA6D2B6A84AE0068294B /* iSwitchTests */,
+				4085FA772B6A84AE0068294B /* iSwitchUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4085FA5C2B6A84AC0068294B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4085FA692B6A84AD0068294B /* Preview Assets.xcassets in Resources */,
+				4085FA662B6A84AD0068294B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4085FA6C2B6A84AE0068294B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4085FA762B6A84AE0068294B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4085FA5A2B6A84AC0068294B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				401515F92B6A9864006964D1 /* RefreshView.swift in Sources */,
+				4085FA9D2B6A91D00068294B /* NewBoardView.swift in Sources */,
+				407926D52B6BB3BF00384177 /* AlternateViews.swift in Sources */,
+				4085FA912B6A89EE0068294B /* BoardData.swift in Sources */,
+				407926D72B6BB69000384177 /* RenameBoardView.swift in Sources */,
+				4085FA992B6A8FA20068294B /* CardView.swift in Sources */,
+				4085FA952B6A8CC50068294B /* ErrorWrapper.swift in Sources */,
+				4085FA932B6A8CA30068294B /* ErrorView.swift in Sources */,
+				4085FA642B6A84AC0068294B /* MainView.swift in Sources */,
+				4085FA622B6A84AC0068294B /* iSwitchApp.swift in Sources */,
+				4085FA972B6A8F920068294B /* BoardView.swift in Sources */,
+				4085FA8C2B6A88570068294B /* Network.swift in Sources */,
+				4085FA8F2B6A89D30068294B /* SwitchStore.swift in Sources */,
+				407926E02B6BD24700384177 /* ThemePicker.swift in Sources */,
+				407926DE2B6BD23300384177 /* ThemeView.swift in Sources */,
+				407926DC2B6BD1F700384177 /* Theme.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4085FA6A2B6A84AE0068294B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4085FA732B6A84AE0068294B /* iSwitchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4085FA742B6A84AE0068294B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4085FA7F2B6A84AE0068294B /* iSwitchUITestsLaunchTests.swift in Sources */,
+				4085FA7D2B6A84AE0068294B /* iSwitchUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4085FA702B6A84AE0068294B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4085FA5D2B6A84AC0068294B /* iSwitch */;
+			targetProxy = 4085FA6F2B6A84AE0068294B /* PBXContainerItemProxy */;
+		};
+		4085FA7A2B6A84AE0068294B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4085FA5D2B6A84AC0068294B /* iSwitch */;
+			targetProxy = 4085FA792B6A84AE0068294B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		4085FA802B6A84AE0068294B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4085FA812B6A84AE0068294B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4085FA832B6A84AE0068294B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"iSwitch/Preview Content\"";
+				DEVELOPMENT_TEAM = 277JVZ87KJ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = amicable.iSwitch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4085FA842B6A84AE0068294B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"iSwitch/Preview Content\"";
+				DEVELOPMENT_TEAM = 277JVZ87KJ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = amicable.iSwitch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4085FA862B6A84AE0068294B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = amicable.iSwitchTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iSwitch.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/iSwitch";
+			};
+			name = Debug;
+		};
+		4085FA872B6A84AE0068294B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = amicable.iSwitchTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iSwitch.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/iSwitch";
+			};
+			name = Release;
+		};
+		4085FA892B6A84AE0068294B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = amicable.iSwitchUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = iSwitch;
+			};
+			name = Debug;
+		};
+		4085FA8A2B6A84AE0068294B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = amicable.iSwitchUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = iSwitch;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4085FA592B6A84AC0068294B /* Build configuration list for PBXProject "iSwitch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4085FA802B6A84AE0068294B /* Debug */,
+				4085FA812B6A84AE0068294B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4085FA822B6A84AE0068294B /* Build configuration list for PBXNativeTarget "iSwitch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4085FA832B6A84AE0068294B /* Debug */,
+				4085FA842B6A84AE0068294B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4085FA852B6A84AE0068294B /* Build configuration list for PBXNativeTarget "iSwitchTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4085FA862B6A84AE0068294B /* Debug */,
+				4085FA872B6A84AE0068294B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4085FA882B6A84AE0068294B /* Build configuration list for PBXNativeTarget "iSwitchUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4085FA892B6A84AE0068294B /* Debug */,
+				4085FA8A2B6A84AE0068294B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4085FA562B6A84AC0068294B /* Project object */;
+}

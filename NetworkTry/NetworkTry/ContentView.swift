@@ -22,10 +22,8 @@ struct ContentView: View {
                     case .success(let response):
                         print("Response: \(response)")
                         self.sync = response
-                        // Handle success
                     case .failure(let error):
                         print("Error: \(error.localizedDescription)")
-                        // Handle error
                     }
                 }
             }){
@@ -52,10 +50,8 @@ struct ContentView: View {
                     case .success(let response):
                         print("Response: \(response)")
                         self.sync = response
-                        // Handle success
                     case .failure(let error):
                         print("Error: \(error.localizedDescription)")
-                        // Handle error
                     }
                 }
             }){
